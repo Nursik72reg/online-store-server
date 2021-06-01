@@ -1,9 +1,7 @@
 const {Sequelize} = require('sequelize')
 
-module.exports = new Sequelize(
-    'online_store', // Название БД
-    'postgres', // Пользователь
-    '12345', // ПАРОЛЬ
+module.exports = new Sequelize('postgres://postgres:postgres@localhost/online_store',
+
     {
         dialect: 'postgres',
         host: process.env.DB_HOST,
