@@ -1,6 +1,6 @@
 const {Sequelize} = require('sequelize')
 
-module.exports = new Sequelize('postgres://postgres:12345:5432/online_store',
+module.exports = new Sequelize('postgres://postgres:12345:8080/online_store',
 
     {
         dialect: 'postgres',
